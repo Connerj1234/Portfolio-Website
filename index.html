@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Conner</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Conner</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Conner Jamison profile picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Conner Jamison</h1>
+            <p class="section__text__p1">Data Scientist</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/ConnerJamison_AugustResume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container-2">
+                <img src="./assets/about-pic.png" alt="profile picture" class="about-pic" height="350px" width="350px"
+                />
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience-blue.png" alt="experience icon"
+                    class="icon"/>
+                    <h2>Experience</h2>
+                    <p>1+ years <br>Data Science</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education-blue.png" alt="education icon"
+                    class="icon"/>
+                    <h2>Education</h2>
+                    <p>B.S. Data Science <br>@ GSU</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>paragraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph hereparagraph here</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="backToTopBtn" onclick="scrollToTop()" type="button" ><img src="./assets/up-arrow.png" alt="up arrow" width="50px" height="50px">
+    </div>
+    </section>
+    <section id="projects">
+        <h1 class="title-2">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/question.png" alt="Project One" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Project One Coming...</h3>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/question.png" alt="Project Two" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Project Two Coming...</h3>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/question.png" alt="Project Three" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Project Three Coming...</h3>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('')">Live Demo</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <h1 class="title-2">Contact Me</h1>
+        <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+                <div class="contact__group grid">
+                    <input type="text" name="user_name" placeholder="Name" required class="contact__input">
+                    <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                </div>
+                <textarea name="user_message" placeholder="Message" required class="contact__input contact__area" ></textarea>
+                <button type="submit" class="btn contact__button">Send Message</button>
+                <p class="contact__message" id="contact-message"></p>
+            </form>
+            <div class="contact__social grid">
+                <a href="https://www.linkedin.com/in/conner-jamison-16a20b208/" target="_blank" class="contact__social-link">
+                    <img style="vertical-align:middle" src="./assets/linkedin-blue.png" alt="linkedin" height="30px" width="30px">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Connerj1234" target="_blank" class="contact__social-link">
+                    <img style="vertical-align:middle" src="./assets/github-blue.png" alt="github" height="30px" width="30px">
+                    <span>Github</span>
+                </a>
+                <a href="https://www.instagram.com/connerjamison1/" target="_blank" class="contact__social-link">
+                    <img style="vertical-align:middle" src="./assets/instagram-blue2.png" alt="email" height="30px" width="30px">
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="nav-links-footer">
+            <div class="nav-links-bottom">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="copyright">Copyright &#169; 2024 Conner Jamison. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>
