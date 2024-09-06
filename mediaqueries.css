@@ -82,6 +82,10 @@
         height: 300px;
         margin: auto;
     }
+
+    .education-text {
+        padding: 0 .5rem;
+    }
     
     .copyright {
         margin: 0 1rem;
