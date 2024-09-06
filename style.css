@@ -262,7 +262,7 @@ section {
 .about-containers, .about-details-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .about-pic {
