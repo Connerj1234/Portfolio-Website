@@ -14,10 +14,20 @@
         padding-left: 43rem;
     }
 }
+@media screen and (max-width: 1600px) {
+    section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
+    }
+    section{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     #about {
         justify-content: center;

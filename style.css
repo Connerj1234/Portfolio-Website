@@ -18,6 +18,25 @@ body {
     min-height: 100vh;
 }
 
+/*.about-tab{
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-underline-position: above;
+    color: white;
+}
+.project-tab{
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-underline-position: above;
+    color: white;
+}
+.contact-tab{
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-underline-position: above;
+    color: white;
+}*/
+
 html{
     scroll-behavior: smooth;
 }
@@ -58,10 +77,11 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;
     text-underline-offset: .5rem;
-    text-underline-position: above;
-    text-shadow: 0 0 10px powderblue;
+    text-underline-position: above;*/
+    text-shadow: 0 0 10px white;
+    color: white;
 }
 
 .logo {
@@ -163,6 +183,7 @@ section {
     gap: 12rem;
     height: 80vh;
     align-items: center;
+    padding-top: 6rem;
 }
 
 .section__pic-container {
