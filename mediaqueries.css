@@ -1,12 +1,19 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
     #profile {
         height: fit-content;
     }
     .about-containers {
         flex-wrap: wrap;
     }
+    #desktop-nav{
+        position: fixed;
+        background-color: rgb(23, 23, 23);
+        z-index: 99999999999;
+    }
+    #nav-links-top{
+        padding-left: 43rem;
+    }
 }
-
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -82,11 +89,9 @@
         height: 300px;
         margin: auto;
     }
-
     .education-text {
         padding: 0 .5rem;
     }
-    
     .copyright {
         margin: 0 1rem;
     }
