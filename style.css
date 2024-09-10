@@ -173,6 +173,13 @@ section {
     min-height: fit-content
 }
 
+.active{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-underline-position: above;
+}
+
 .section-container {
     display: flex;    
 }
