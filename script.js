@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const sections = document.querySelectorAll("section");
   const topNavLinks = document.querySelectorAll("#nav-links-top a");
 
-  window.addEventListener("scroll", () => {
+  function updateActiveLink() {
       let currentSection = "";
 
       sections.forEach(section => {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.clientHeight;
-          
+
           if (pageYOffset >= sectionTop - sectionHeight / 3) {
               currentSection = section.getAttribute("id");
           }
@@ -64,5 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
               link.classList.add("active");
           }
       });
-  });
+
+      if (currentSection === "") {
+          document.querySelector('.profile-tab a').classList.add('active');
+      }
+  }
+
+  updateActiveLink();
+
+  window.addEventListener("scroll", updateActiveLink);
 });
+
