@@ -42,19 +42,27 @@ const sendEmail = (e) =>{
 
 contactForm.addEventListener('submit', sendEmail)
 
-$(document).ready(function(){
-  var $sections = $('.containers');
-  $(window).scroll(function(){
-    var currentScroll = $(this).scrollTop();
-    var $currentSection
-    $sections.each(function(){
-      var divPosition = $(this).offset().top;
-      if( divPosition - 1 < currentScroll ){
-        $currentSection = $(this);
-      }
-      var id = $currentSection.attr('id');
-   	 $('a').removeClass('active');
-   	 $("[href=#"+id+"]").addClass('active');
-    })
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+  const topNavLinks = document.querySelectorAll("#nav-links-top a");
+
+  window.addEventListener("scroll", () => {
+      let currentSection = "";
+
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              currentSection = section.getAttribute("id");
+          }
+      });
+
+      topNavLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").includes(currentSection)) {
+              link.classList.add("active");
+          }
+      });
   });
 });

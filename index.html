@@ -14,10 +14,10 @@
         <div class="logo">Conner</div>
         <div>
             <ul class="nav-links" id="nav-links-top">
-                <li class="home-tab"><a href="#home" onclick="scrollToTop()">Home</a></li>
-                <li class="about-tab"><a href="#about">About</a></li>
-                <li class="project-tab"><a href="#projects">Projects</a></li>
-                <li class="contact-tab"><a href="#contact">Contact</a></li>
+                <li class="profile-tab"><a href="#profile" onclick="scrollToTop()" data-id="profile">Home</a></li>
+                <li class="about-tab"><a href="#about" data-id="about">About</a></li>
+                <li class="project-tab"><a href="#projects" data-id="projects">Projects</a></li>
+                <li class="contact-tab"><a href="#contact" data-id="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="section">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Conner Jamison profile picture">
         </div>
@@ -49,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="section">
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container-2">
@@ -80,7 +80,7 @@
         <button id="backToTopBtn" onclick="scrollToTop()" type="button" ><img src="./assets/up-arrow.png" alt="up arrow" width="50px" height="50px">
     </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="section">
         <h1 class="title-2">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -117,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact section">
+    <section id="contact" class="section">
         <h1 class="title-2">Contact Me</h1>
         <div class="contact__container container grid">
             <form action="" class="contact__form grid" id="contact-form">
@@ -148,7 +148,7 @@
     <footer>
         <nav class="nav-links-footer">
             <div class="nav-links-bottom">
-                <ul class="nav-links">
+                <ul class="nav-links" id="footer-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>

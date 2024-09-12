@@ -13,6 +13,10 @@
     #nav-links-top{
         padding-left: 38rem;
     }
+    .nav-links-bottom{
+        color: powderblue;
+        text-decoration: none;
+    }
 }
 @media screen and (max-width: 1600px) {
     section{
@@ -24,6 +28,10 @@
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
+    }
+    .active{
+        color: powderblue;
+        text-decoration: none;
     }
     section{
         padding-left: 2rem;
