@@ -170,7 +170,7 @@ section {
     padding-top: 4vh;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 96vh;
+    
     box-sizing: border-box;
     min-height: fit-content
 }
@@ -449,7 +449,7 @@ section {
 .contact__social {
     justify-content: center;
     column-gap: 3rem;
-    height: 6rem;
+    height: 8rem;
     grid: auto-flow / 1fr 1fr 1fr;
 }
 
