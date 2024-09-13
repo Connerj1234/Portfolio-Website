@@ -1,9 +1,26 @@
-function toggleMenu() {
+/*function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open")
     icon.classList.toggle("open")
+}*/
+
+function toggleMenu() {
+  const menu = document.querySelector('.hamburger-menu');
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  
+  menu.classList.toggle('active');
+  hamburgerIcon.classList.toggle('open');
+
+  if (menu.classList.contains('active')) {
+      document.body.classList.add('menu-open');
+  } else {
+      document.body.classList.remove('menu-open');
+  }
 }
+
+
+
 
 
 window.onscroll = function() {scrollFunction()};

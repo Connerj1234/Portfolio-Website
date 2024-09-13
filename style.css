@@ -81,12 +81,7 @@ a:hover {
 
 #hamburger-nav {
     display: none;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    z-index: 100001;
 }
 
 .hamburger-icon {
@@ -96,58 +91,80 @@ a:hover {
     height: 24px;
     width: 30px;
     cursor: pointer;
+    z-index: 999999;
 }
 
 .hamburger-icon span {
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: powderblue;
-    transition: all 0.3 ease-in-out;
+    margin: 6px 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.menu-links {
-    position: absolute;
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(23, 23, 23);
-    width: fit-content;
-    overflow: hidden;
     display: none;
-    padding: 5px;
-    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu .menu-links {
+    list-style-type: none;
+    text-align: center;
+}
+
+.hamburger-menu .menu-links li a {
     color: powderblue;
     text-decoration: none;
-    padding-right: 2rem;
-}
-
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links.open {
-    max-height: 300px;
+    font-size: 2em;
     display: block;
-    text-align: right;
-    margin: auto -60px;
+    padding: 1em;
+}
+
+.hamburger-menu .menu-links li a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger-menu.active {
+    display: flex;
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
+
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
-    transform: none;
-}
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-.hamburger-icon span:first-child {
-    transform: none;
-}
+
+/*Profile Section*/
 
 section {
     padding-top: 4vh;
@@ -477,3 +494,4 @@ footer p{
 footer a.active {
     text-decoration: none;
 }
+*/

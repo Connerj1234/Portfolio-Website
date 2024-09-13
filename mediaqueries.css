@@ -8,7 +8,7 @@
     #desktop-nav{
         position: fixed;
         background-color: rgb(23, 23, 23);
-        z-index: 99999999999;
+        z-index: 999;
     }
     #nav-links-top{
         padding-left: 38rem;
@@ -29,6 +29,20 @@
     #desktop-nav {
         display: none;
     }
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-menu.active {
+        display: flex;
+    }
     .active{
         color: powderblue;
         text-decoration: none;
@@ -41,7 +55,10 @@
         justify-content: center;
     }
     #hamburger-nav {
-        display: flex;
+        display: block;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+
     }
     .section-container {
         display: block;
