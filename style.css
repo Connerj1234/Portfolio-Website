@@ -40,7 +40,10 @@ nav {
 }
 
 .nav-links {
+    display: flex;
     gap: 4rem;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
     font-size: 1.5rem;
     color: powderblue;
@@ -71,98 +74,12 @@ a:hover {
 
 .logo {
     font-size: 1.5rem;
+    z-index: 99;
 }
 
 .logo:hover {
     cursor: default;
 }
-
-/*Hamburger Section*/
-
-#hamburger-nav {
-    display: none;
-    z-index: 100001;
-}
-
-.hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-    z-index: 999999;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 4px;
-    background-color: powderblue;
-    margin: 6px 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
-.hamburger-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(23, 23, 23);
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 101;
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger-menu .menu-links {
-    list-style-type: none;
-    text-align: center;
-}
-
-.hamburger-menu .menu-links li a {
-    color: powderblue;
-    text-decoration: none;
-    font-size: 2em;
-    display: block;
-    padding: 1em;
-}
-
-.hamburger-menu .menu-links li a:hover {
-    text-decoration: underline;
-}
-
-.hamburger-menu .close-icon {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 3em;
-    color: white;
-    cursor: pointer;
-}
-
-.hamburger-menu.active {
-    display: flex;
-}
-
-body.menu-open {
-    overflow: hidden;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
 
 /*Profile Section*/
 
@@ -494,4 +411,3 @@ footer p{
 footer a.active {
     text-decoration: none;
 }
-*/

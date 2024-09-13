@@ -1,23 +1,33 @@
-/*function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
-}*/
-
 function toggleMenu() {
   const menu = document.querySelector('.hamburger-menu');
   const hamburgerIcon = document.querySelector('.hamburger-icon');
   
   menu.classList.toggle('active');
   hamburgerIcon.classList.toggle('open');
-
+  
+  // Prevent body from scrolling when the menu is open
   if (menu.classList.contains('active')) {
       document.body.classList.add('menu-open');
   } else {
       document.body.classList.remove('menu-open');
   }
 }
+
+function closeMenu() {
+  const menu = document.querySelector('.hamburger-menu');
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  
+  menu.classList.remove('active');
+  hamburgerIcon.classList.remove('open');
+  document.body.classList.remove('menu-open');
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.menu-links a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+
 
 
 
