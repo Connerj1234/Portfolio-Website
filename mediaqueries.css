@@ -36,6 +36,9 @@
     #desktop-nav {
         display: none;
     }
+    #logo-conner{
+        position: relative;
+    }
     #hamburger-nav {
         display: flex;
         justify-content: space-between;
@@ -164,6 +167,15 @@
         height: fit-content;
         margin-bottom: 0;
         float: top;
+    }
+    #about{
+        padding-top: 1rem;
+    }
+    #projects{
+        padding-top: 1rem;
+    }
+    #contact{
+        padding-top: 1rem;
     }
     article {
         font-size: 1rem;
