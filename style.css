@@ -382,6 +382,7 @@ section {
     column-gap: 3rem;
     height: 8rem;
     grid: auto-flow / 1fr 1fr 1fr;
+    padding-bottom: 8rem;
 }
 
 .contact__social-link {
