@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+body { 
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -25,6 +25,7 @@ html{
 a, .btn {
     transition: all 300ms ease;
 }
+
 
 /*Nav Link Section*/
 
@@ -129,8 +130,9 @@ section {
 }
 
 .section__text__p1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .title {
@@ -227,10 +229,17 @@ section {
     font-size: 2rem;
     text-align: center;
 }
+.details-container p {
+    color: white;
+}
 
 .section-container {
     gap: 4rem;
     height: 65%;
+}
+
+.text-container p{
+    color: white;
 }
 
 /*Back to Top Button*/
@@ -281,7 +290,7 @@ section {
 .project-title {
     margin: .1rem;
     height: 40px;
-    color: #00c3ff;
+    color: white;
 }
 
 .details-container h3 {
