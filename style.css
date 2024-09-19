@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: rgb(23, 23, 23);
-    color: powderblue;
+    color: #00c3ff;
     padding-bottom: 30px;
     margin: auto; 
     min-height: 100vh;
@@ -45,7 +45,7 @@ nav {
     align-items: center;
     list-style: none;
     font-size: 1.5rem;
-    color: powderblue;
+    color: #00c3ff;
 }
 
 #nav-links-top a.active {
@@ -61,7 +61,7 @@ nav {
 }
 
 a {
-    color: powderblue;
+    color: #00c3ff;
     text-decoration: none;
     text-decoration-color: black;
 }
@@ -159,15 +159,17 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 {
-    border: rgb(23, 23, 23) .1rem solid;
+.btn-color-1:hover, .btn-color-2:hover {
+    border: rgb(23, 23, 23);
+    background-color: white;
+    color: black;
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
+.btn-color-1, .btn-color-2 {
     cursor: pointer;
     background: rgb(23, 23, 23);
     color: white;
-    border-color: powderblue;
+    border: #00c3ff .1rem solid;
 }
 
 .btn-container {
@@ -188,10 +190,10 @@ section {
 }
 
 .text-container {
-    border: solid powderblue;
+    border: solid #00c3ff;
     border-width: .1rem;
     border-radius: 2rem;
-    border-color: powderblue;
+    border-color: #00c3ff;
     text-align: left;
     padding: 15px;
 }
@@ -214,9 +216,9 @@ section {
     padding: 1rem 4rem;
     flex: 1;
     background: rgb(23, 23, 23);
-    border: .1rem solid powderblue;
+    border: .1rem solid #00c3ff;
     border-radius: 2rem;
-    border-color: powderblue;
+    border-color: #00c3ff;
     border-width: .1rem;
     text-align: center;
 }
@@ -265,7 +267,7 @@ section {
 }
 
 .color-container {
-    border-color: powderblue;
+    border-color: #00c3ff;
     background-color: rgb(23, 23, 23);
     padding: 1.5rem;
 }
@@ -279,7 +281,7 @@ section {
 .project-title {
     margin: .1rem;
     height: 40px;
-    color: powderblue;
+    color: #00c3ff;
 }
 
 .details-container h3 {
@@ -287,8 +289,8 @@ section {
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(23, 23, 23);
+    color: white;
+    border-color: #00c3ff .1rem solid;
 }
 
 .title-2 {
@@ -354,14 +356,16 @@ section {
     justify-content: center;
     margin: 0 auto;
     width: 9rem;
-    border-style: solid;
+    background: rgb(23, 23, 23);
+    color: white;
+    border: #00c3ff .1rem solid;
 }
 
 .contact__button:hover {
     cursor: pointer;
-    background: rgb(23, 23, 23);
-    color: white;
-    border-color: powderblue;
+    background: white;
+    color: black;
+    border-color: rgb(23, 23, 23);
 }
 
 .contact__social {
@@ -401,7 +405,7 @@ footer p{
 
 #footer-links{
     text-decoration: none;
-    color: powderblue;
+    color: #00c3ff;
 }
 
 .nav-links-footer {
