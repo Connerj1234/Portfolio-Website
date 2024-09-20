@@ -2,21 +2,26 @@
     #profile {
         height: fit-content;
     }
+    .section-about{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
     .about-containers {
         flex-wrap: wrap;
     }
     #desktop-nav{
         position: fixed;
-        background-color: rgb(23, 23, 23);
+        background: transparent;
         z-index: 999;
     }
     #black-bar{
+        background: transparent;
+        backdrop-filter: blur(10px);
         width: 100vw;
         height: 75px;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgb(23, 23, 23);
         z-index: 99;
     }
     #nav-links-top{
@@ -24,7 +29,7 @@
         position: fixed;
         right: 6rem;
         top: 1.3rem;
-        background-color: rgb(23, 23, 23);
+        background: transparent;
     }
     .nav-links-bottom{
         color: powderblue;
@@ -146,6 +151,10 @@
         text-decoration: none;
     }
     section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .section-about{
         padding-left: 2rem;
         padding-right: 2rem;
     }
