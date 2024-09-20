@@ -227,15 +227,18 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
+    .profile-picture {
         width: auto;
         height: 46vw;
         justify-content: center;
     }
-    .section__pic-container-2 {
-        width: 300px;
-        height: 300px;
-        margin: auto;
+    .section__pic-container{
+        width: 48vw;
+        height: 48vw;
+    }
+    .rotating-border{
+        width: 48vw;
+        height: 48vw;
     }
     .education-text {
         padding: 0 .5rem;

@@ -112,12 +112,35 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    background-color: rgb(23, 23, 23);
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.section__pic-container-2 {
-    margin: auto;
+.rotating-border{
+    position: absolute;
     height: 400px;
     width: 400px;
+    border-radius: 50%;
+    background-image: conic-gradient(#00c3ff 10deg, transparent 100deg);
+    animation: rotate 6s infinite linear;
+    z-index: 1; 
+
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.profile-picture{
+    height: 380px;
+    width: 380px;
+    position: relative;
+    z-index: 2;
 }
 
 .section__text {
