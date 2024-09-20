@@ -155,8 +155,8 @@
         padding-right: 2rem;
     }
     .section-about{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
     #about {
         justify-content: center;
@@ -186,6 +186,10 @@
     #hamburger-nav {
         position: relative;
         padding: 2rem;
+    }
+    .section-about{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
