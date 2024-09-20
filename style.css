@@ -13,7 +13,7 @@ body {
     font-style: normal;
     background-color: rgb(23, 23, 23);
     color: #00c3ff;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     margin: auto; 
     min-height: 100vh;
 }
@@ -448,22 +448,37 @@ footer p{
     color: white;
 }
 
+.footer-container{
+    display: flex;
+    padding: 5rem;
+    justify-content: center; 
+}
+
+.name-footer{
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    left: 5rem;
+}
+
 .nav-links-bottom {
     display: flex;
     margin: 0 auto;
-    
+    gap: 3rem;
 }
 
 #footer-links{
-    text-decoration: none;
-    color: #00c3ff;
+    gap: 3rem;
 }
 
 .nav-links-footer {
+    display: flex;
+    padding: 0;
+    height: 88px;
     justify-content: center;
-    text-align: center;
 }
 
 footer a.active {
     text-decoration: none;
 }
+
