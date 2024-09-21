@@ -141,7 +141,7 @@ section {
     opacity: .2;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
@@ -358,6 +358,7 @@ section {
 
 .details-container.color-container::before{
     filter: blur(1.5rem);
+    border-radius: 2rem;
     opacity: .2;
 }
 
