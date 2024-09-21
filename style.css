@@ -242,14 +242,6 @@ section {
 }
 
 .text-container {
-    /*flex: 1;
-    border: double 1em transparent;
-    background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 2rem;
-    border-width: .2rem;
-    text-align: left;*/
     border: solid #00c3ff;
     border-width: .1rem;
     border-radius: 2rem;
@@ -276,14 +268,6 @@ section {
 }
 
 .details-container{
-    /*flex: 1;
-    border: double 1em transparent;
-    background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 2rem;
-    border-width: .2rem;
-    text-align: center;*/
     padding: 1rem 4rem;
     flex: 1;
     background: rgb(23, 23, 23);
