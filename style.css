@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root{
+    --main-color: #00c3ff;
+    --background-color: rgb(23, 23, 23)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +16,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(23, 23, 23);
-    color: #00c3ff;
+    background-color: var(--background-color);
+    color: var(--main-color);
     padding-bottom: 60px;
     margin: auto; 
     min-height: 100vh;
@@ -47,7 +52,7 @@ nav {
     align-items: center;
     list-style: none;
     font-size: 1.5rem;
-    color: #00c3ff;
+    color: var(--main-color);
 }
 
 #nav-links-top a.active {
@@ -63,7 +68,7 @@ nav {
 }
 
 a {
-    color: #00c3ff;
+    color: var(--main-color);
     text-decoration: none;
     text-decoration-color: black;
 }
@@ -126,7 +131,7 @@ section {
     content: '';
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #00c3ff, transparent, #00c3ff, transparent, #00c3ff);
+    background-image: conic-gradient(from var(--angle), var(--main-color), transparent, var(--main-color), transparent, var(--main-color));
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -140,7 +145,7 @@ section {
 .section__pic-container::before{
     filter: blur(2rem);
     opacity: .15;
-    background-image: conic-gradient(from var(--angle), #00c3ff 25%, transparent 50%, #00c3ff 75%, transparent);
+    background-image: conic-gradient(from var(--angle), var(--main-color) 25%, transparent 50%, var(--main-color) 75%, transparent);
 }
 
 @property --angle {
@@ -214,16 +219,16 @@ section {
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
-    border: rgb(23, 23, 23);
+    border: var(--background-color);
     background-color: white;
     color: black;
 }
 
 .btn-color-1, .btn-color-2 {
     cursor: pointer;
-    background: rgb(23, 23, 23);
+    background: var(--background-color);
     color: white;
-    border: #00c3ff .1rem solid;
+    border: var(--main-color) .1rem solid;
 }
 
 .btn-container {
@@ -237,6 +242,17 @@ section {
     position: relative;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+  
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -244,7 +260,7 @@ section {
 }
 
 .text-container {
-    border: solid #00c3ff;
+    border: solid var(--main-color);
     border-width: .1rem;
     border-radius: 2rem;
     text-align: left;
@@ -277,8 +293,8 @@ section {
 .details-container{
     padding: 1rem 4rem;
     flex: 1;
-    background: rgb(23, 23, 23);
-    border: .1rem solid #00c3ff;
+    background: var(--background-color);
+    border: .1rem solid var(--main-color);
     border-radius: 2rem;
     border-width: .1rem;
     text-align: center;
@@ -353,7 +369,7 @@ section {
     content: '';
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #00c3ff, transparent, #00c3ff);
+    background-image: conic-gradient(from var(--angle), var(--main-color), transparent, var(--main-color));
     box-shadow: 0 0 20px 10px rgba(0, 195, 255, 0.2);
     top: 50%;
     left: 50%;
@@ -389,7 +405,7 @@ section {
 
 .project-btn {
     color: white;
-    border-color: #00c3ff .1rem solid;
+    border-color: var(--main-color) .1rem solid;
 }
 
 .title-2 {
@@ -438,7 +454,7 @@ section {
     color: black;
     font-family: "Nunito", sans-serif;
     border-radius: 2rem;
-    border-color: rgb(23, 23, 23);
+    border-color: var(--background-color);
     border-style: solid;
     font-size: medium;
 }
@@ -458,16 +474,16 @@ section {
     justify-content: center;
     margin: 0 auto;
     width: 9rem;
-    background: rgb(23, 23, 23);
+    background: var(--background-color);
     color: white;
-    border: #00c3ff .1rem solid;
+    border: var(--main-color) .1rem solid;
 }
 
 .contact__button:hover {
     cursor: pointer;
     background: white;
     color: black;
-    border-color: rgb(23, 23, 23);
+    border-color: var(--background-color);
 }
 
 .contact__social {
