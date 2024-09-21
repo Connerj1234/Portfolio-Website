@@ -137,8 +137,9 @@ section {
 }
 
 .section__pic-container::before{
-    filter: blur(1.5rem);
-    opacity: .2;
+    filter: blur(2rem);
+    opacity: .15;
+    background-image: conic-gradient(from var(--angle), #00c3ff 25%, transparent 50%, #00c3ff 75%, transparent);
 }
 
 @property --angle {
