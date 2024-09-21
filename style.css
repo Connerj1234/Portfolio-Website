@@ -245,7 +245,7 @@ section {
 .fade-in {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 2s ease-out, transform 2s ease-out;
+    transition: opacity 1s ease-out, transform 1s ease-out;
   }
   
 .fade-in.visible {
