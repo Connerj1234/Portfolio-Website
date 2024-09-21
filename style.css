@@ -166,11 +166,10 @@ section {
 }
 
 .title-about{
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin: auto;
     margin-top: 5rem;
-    padding-bottom: 2rem;
 }
 
 .icon {
@@ -223,12 +222,18 @@ section {
 }
 
 .text-container {
-    border: solid #00c3ff;
-    border-width: .1rem;
+    flex: 1;
+    border: double 1em transparent;
+    background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     border-radius: 2rem;
-    border-color: #00c3ff;
+    border-width: .2rem;
     text-align: left;
-    padding: 15px;
+}
+
+.text-container p{
+    padding: 1rem;
 }
 
 .about-details-container {
@@ -245,16 +250,19 @@ section {
     border-radius: 2rem;
 }
 
-.details-container {
-    padding: 1rem 4rem;
+.details-container{
     flex: 1;
-    background: rgb(23, 23, 23);
-    border: .1rem solid #00c3ff;
+    border: double 1em transparent;
+    background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     border-radius: 2rem;
-    border-width: .1rem;
+    border-width: .2rem;
     text-align: center;
 }
-
+.text-about{
+    padding: 1rem;
+}
 .details-container h2 {
     font-size: 2rem;
     text-align: center;
@@ -262,12 +270,10 @@ section {
 .details-container p {
     color: white;
 }
-
 .section-container {
     gap: 4rem;
     height: 65%;
 }
-
 .text-container p{
     color: white;
 }
@@ -287,12 +293,10 @@ section {
     transition: transform ease 300ms;
     z-index: 999;
   }
-  
   #backToTopBtn.show {
     display: block;
     opacity: 1;
   }
-
   #backToTopBtn.show:hover {
     cursor: pointer;
     transform: translate(0, -10px);
@@ -306,9 +310,11 @@ section {
 }
 
 .color-container {
-    border-color: #00c3ff;
-    background-color: rgb(23, 23, 23);
-    padding: 1.5rem;
+    padding: 1rem;
+    border: .1rem solid #00c3ff;
+    border-radius: 2rem;
+    background-image: none;
+    border-width: .1rem;
     min-width: 300px;
     max-width: 400px;
 }
@@ -341,6 +347,10 @@ section {
     margin-top: 5rem;
     text-align: center;
     width: 300px;
+}
+
+.project-inside{
+    padding: 1rem;
 }
 
 /*Contact Section*/
@@ -450,7 +460,10 @@ footer p{
 
 .footer-container{
     display: flex;
-    padding: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     justify-content: center; 
 }
 
@@ -459,6 +472,9 @@ footer p{
     text-align: center;
     position: absolute;
     left: 5rem;
+}
+.name-footer:hover{
+    cursor: default;
 }
 
 .nav-links-bottom {
