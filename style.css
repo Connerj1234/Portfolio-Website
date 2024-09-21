@@ -334,14 +334,11 @@ section {
 
 .color-container {
     padding: .3rem;
-    border: .1rem solid #00c3ff;
-    border-radius: 2rem;
     background-image: none;
-    background-color: rgb(23, 23, 23);
-    border-width: .1rem;
     min-width: 300px;
     max-width: 400px;
     position: relative;
+    border: none;
 }
 
 .details-container.color-container::after, .details-container.color-container::before{
@@ -356,7 +353,7 @@ section {
     z-index: -1;
     padding: 5px;
     border-radius: 2rem;
-    animation: 3s spin linear infinite;
+    animation: 5s spin linear infinite;
 }
 
 .details-container.color-container::before{
