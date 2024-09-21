@@ -27,12 +27,6 @@ document.querySelectorAll('.menu-links a').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
-
-
-
-
-
-
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   const backToTopBtn = document.getElementById("backToTopBtn");
@@ -47,8 +41,6 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message')
 

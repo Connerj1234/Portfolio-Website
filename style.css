@@ -318,7 +318,7 @@ section {
     justify-content: center;
     background-color: transparent;
     border: none;
-    transition: transform ease 300ms;
+    transition: transform ease 300ms, opacity 300ms ease;
     z-index: 999;
   }
 
@@ -550,4 +550,8 @@ footer p{
 footer a.active {
     text-decoration: none;
 }
+
+
+
+
 
