@@ -134,7 +134,7 @@ section {
     padding: 1px;
     border-radius: 50%;
     animation: 5s spin linear infinite;
-    box-shadow: 0 0 40px 20px rgba(0, 195, 255, 0.2);
+    box-shadow: 0 0 20px 15px rgba(0, 195, 255, 0.2);
 }
 
 .section__pic-container::before{
@@ -353,11 +353,13 @@ section {
     content: '';
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #00c3ff, rgb(23, 23, 23), #00c3ff);
+    background-image: conic-gradient(from var(--angle), #00c3ff, transparent, #00c3ff);
+    box-shadow: 0 0 20px 10px rgba(0, 195, 255, 0.2);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
+    filter: none;
     padding: 5px;
     border-radius: 2rem;
     animation: 5s spin linear infinite;
@@ -366,7 +368,7 @@ section {
 .details-container.color-container::before{
     filter: blur(1.5rem);
     border-radius: 2rem;
-    opacity: .2;
+    opacity: .15;
 }
 
 .project-img {
