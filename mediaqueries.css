@@ -207,6 +207,9 @@
         margin-bottom: 0;
         float: top;
     }
+    .title-about{
+        margin-bottom: 2rem;
+    }
     #logo-conner{
         padding: 0 .5rem;
     }
@@ -248,10 +251,10 @@
         width: 48vw;
         height: 48vw;
     }
-    .rotating-border{
+    /*.rotating-border{
         width: 48vw;
         height: 48vw;
-    }
+    }*/
     .education-text {
         padding: 0 .5rem;
     }

@@ -39,6 +39,7 @@ nav {
     padding: 0 10rem;
     height: 10vh;
 }
+
 .nav-links {
     display: flex;
     gap: 4rem;
@@ -75,6 +76,7 @@ a:hover {
 .logo {
     font-size: 1.5rem;
 }
+
 #logo-conner{
     position: fixed;
 }
@@ -83,13 +85,13 @@ a:hover {
     cursor: default;
 }
 
+
 /*Profile Section*/
 
 section {
     padding-top: 4vh;
     padding-left: 2rem;
     padding-right: 2rem;
-    
     box-sizing: border-box;
     min-height: fit-content
 }
@@ -119,20 +121,38 @@ section {
     position: relative;
 }
 
-.rotating-border{
+.section__pic-container::after, .section__pic-container::before{
     position: absolute;
-    height: 400px;
-    width: 400px;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #00c3ff, rgb(23, 23, 23), #00c3ff, rgb(23, 23, 23), #00c3ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    padding: 1px;
     border-radius: 50%;
-    background-image: conic-gradient(#00c3ff 10deg, transparent 100deg);
-    animation: rotate 6s infinite linear;
-    z-index: 1; 
-
+    animation: 5s spin linear infinite;
 }
 
-@keyframes rotate{
-    100%{
-        transform: rotate(-360deg);
+.section__pic-container::before{
+    filter: blur(1.5rem);
+    opacity: .2;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
     }
 }
 
@@ -222,14 +242,19 @@ section {
 }
 
 .text-container {
-    flex: 1;
+    /*flex: 1;
     border: double 1em transparent;
     background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-radius: 2rem;
     border-width: .2rem;
+    text-align: left;*/
+    border: solid #00c3ff;
+    border-width: .1rem;
+    border-radius: 2rem;
     text-align: left;
+    padding: 15px;
 }
 
 .text-container p{
@@ -251,29 +276,41 @@ section {
 }
 
 .details-container{
-    flex: 1;
+    /*flex: 1;
     border: double 1em transparent;
     background-image: linear-gradient(rgb(23, 23, 23), rgb(23, 23, 23)), linear-gradient(to right, #003e50, #00c3ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-radius: 2rem;
     border-width: .2rem;
+    text-align: center;*/
+    padding: 1rem 4rem;
+    flex: 1;
+    background: rgb(23, 23, 23);
+    border: .1rem solid #00c3ff;
+    border-radius: 2rem;
+    border-width: .1rem;
     text-align: center;
 }
+
 .text-about{
     padding: 1rem;
 }
+
 .details-container h2 {
     font-size: 2rem;
     text-align: center;
 }
+
 .details-container p {
     color: white;
 }
+
 .section-container {
     gap: 4rem;
     height: 65%;
 }
+
 .text-container p{
     color: white;
 }
@@ -293,10 +330,12 @@ section {
     transition: transform ease 300ms;
     z-index: 999;
   }
+
   #backToTopBtn.show {
     display: block;
     opacity: 1;
   }
+
   #backToTopBtn.show:hover {
     cursor: pointer;
     transform: translate(0, -10px);
@@ -310,13 +349,35 @@ section {
 }
 
 .color-container {
-    padding: 1rem;
+    padding: .3rem;
     border: .1rem solid #00c3ff;
     border-radius: 2rem;
     background-image: none;
+    background-color: rgb(23, 23, 23);
     border-width: .1rem;
     min-width: 300px;
     max-width: 400px;
+    position: relative;
+}
+
+.details-container.color-container::after, .details-container.color-container::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #00c3ff, rgb(23, 23, 23), #00c3ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 2rem;
+    animation: 3s spin linear infinite;
+}
+
+.details-container.color-container::before{
+    filter: blur(1.5rem);
+    opacity: .2;
 }
 
 .project-img {
@@ -353,6 +414,7 @@ section {
     padding: 1rem;
 }
 
+
 /*Contact Section*/
 
 .grid {
@@ -363,7 +425,6 @@ section {
     margin-inline: 1.5rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .contact__container {
@@ -373,7 +434,6 @@ section {
 .contact__group, .contact__form {
     gap: 1rem;
 }
-
 
 .contact__form {
     position: relative;
@@ -438,6 +498,7 @@ section {
     bottom: -2rem;
 }
 
+
 /*Footer Section*/
 
 footer {
@@ -473,6 +534,7 @@ footer p{
     position: absolute;
     left: 5rem;
 }
+
 .name-footer:hover{
     cursor: default;
 }
