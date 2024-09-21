@@ -18,7 +18,7 @@ body {
     font-style: normal;
     background-color: var(--background-color);
     color: var(--main-color);
-    padding-bottom: 60px;
+    padding-bottom: 180px;
     margin: auto; 
     min-height: 100vh;
 }
@@ -192,13 +192,6 @@ section {
     margin-top: 2rem;
 }
 
-.title-about{
-    font-size: 3rem;
-    text-align: center;
-    margin: auto;
-    margin-top: 5rem;
-}
-
 .icon {
     cursor: pointer;
     height: 2rem;
@@ -240,6 +233,13 @@ section {
 
 #about {
     position: relative;
+}
+
+.title-about{
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
 }
 
 .fade-in {
@@ -566,8 +566,3 @@ footer p{
 footer a.active {
     text-decoration: none;
 }
-
-
-
-
-

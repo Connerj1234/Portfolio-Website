@@ -1,21 +1,24 @@
+const menu = document.querySelector('.hamburger-menu');
+const overlay = document.querySelector('.overlay');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+
 function toggleMenu() {
-  const menu = document.querySelector('.hamburger-menu');
-  const hamburgerIcon = document.querySelector('.hamburger-icon');
-  menu.classList.toggle('active');
-  hamburgerIcon.classList.toggle('open');
-  if (menu.classList.contains('active')) {
-      document.body.classList.add('menu-open');
-  } else {
-      document.body.classList.remove('menu-open');
-  }
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active'); // Toggle the overlay
+    hamburgerIcon.classList.toggle('open');
+    
+    if (menu.classList.contains('active')) {
+        document.body.classList.add('menu-open');
+    } else {
+        document.body.classList.remove('menu-open');
+    }
 }
 
 function closeMenu() {
-  const menu = document.querySelector('.hamburger-menu');
-  const hamburgerIcon = document.querySelector('.hamburger-icon');
-  menu.classList.remove('active');
-  hamburgerIcon.classList.remove('open');
-  document.body.classList.remove('menu-open');
+    menu.classList.remove('active');
+    overlay.classList.remove('active'); // Remove overlay when closing the menu
+    hamburgerIcon.classList.remove('open');
+    document.body.classList.remove('menu-open');
 }
 
 document.querySelectorAll('.menu-links a').forEach(link => {
