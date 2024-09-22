@@ -89,6 +89,9 @@
     #logo-conner{
         position: relative;
     }
+    .logo{
+        text-shadow: 0 0 8px white;
+    }
     #black-bar{
         display: none;
     }
@@ -199,8 +202,8 @@
         overflow: hidden;
     }
     .name-hamburger{
-        color: #00c3ff;
-        text-shadow: 0 0 8px #00c3ff;
+        color: white;
+        text-shadow: 0 0 8px white;
         font-size: 2.5rem;
         margin-bottom: 10rem;
     }
