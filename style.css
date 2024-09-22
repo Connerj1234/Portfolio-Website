@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-body { 
+body {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -19,7 +19,7 @@ body {
     background-color: var(--background-color);
     color: var(--main-color);
     padding-bottom: 180px;
-    margin: auto; 
+    margin: auto;
     min-height: 100vh;
 }
 
@@ -103,7 +103,7 @@ section {
 }
 
 .section-container {
-    display: flex;    
+    display: flex;
 }
 
 #profile {
@@ -121,7 +121,7 @@ section {
     width: 400px;
     margin: auto 0;
     background-color: transparent;
-    border-radius: 50%; 
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -162,7 +162,7 @@ section {
     to{
         --angle: 360deg;
     }
-} 
+}
 
 .profile-picture{
     height: 380px;
@@ -248,7 +248,7 @@ section {
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
-  
+
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -533,7 +533,7 @@ footer p{
     padding-right: 5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .name-footer{
@@ -567,3 +567,5 @@ footer p{
 footer a.active {
     text-decoration: none;
 }
+
+/* New style*/
