@@ -394,6 +394,12 @@ section {
     max-height: 250px;
 }
 
+.project-img-1 {
+    border-radius: 2rem;
+    max-width: 250px;
+    max-height: 250px;
+}
+
 .project-title {
     margin: .1rem;
     height: 40px;
@@ -420,6 +426,11 @@ section {
 
 .project-inside{
     padding: 1rem;
+}
+
+.project-inside-1 {
+    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 
