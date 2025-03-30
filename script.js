@@ -1,3 +1,10 @@
+// Update copyright year
+document.addEventListener('DOMContentLoaded', () => {
+    const currentYear = new Date().getFullYear();
+    const footerBottom = document.querySelector('.footer-bottom p');
+    footerBottom.innerHTML = `&#169; ${currentYear} Conner Jamison. All Rights Reserved.`;
+});
+
 // Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
