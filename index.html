@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conner Jamison | Data Scientist</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-brand">Conner</div>
-        <div class="nav-links">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <button class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="background-layer" aria-hidden="true"></div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="./assets/Profile Pic (1).png" alt="Conner Jamison">
-                </div>
-            </div>
-            <div class="hero-text">
-                <h1>Conner Jamison</h1>
-                <p class="subtitle">Data Scientist / Analyst</p>
-                <div class="cta-buttons">
-                    <a href="https://drive.google.com/file/d/1brn4dOxiFocWQ-8D_FwCc40-AuGbvLI8xDP5oTWTNPQ/view?usp=download" class="btn btn-primary" download>Download CV</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <header class="top-nav">
+      <div class="brand">Conner Jamison</div>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Experience</h3>
-                    <p>1+ years Data Science / Analytics</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Education</h3>
-                    <p>B.S. Data Science @ GSU</p>
-                </div>
+    <main class="portfolio-shell" id="home">
+      <aside class="profile-column">
+        <article class="profile-card">
+          <div class="profile-top">
+            <div>
+              <p class="role-tag">Data Scientist</p>
+              <h1>Conner Jamison</h1>
             </div>
-            <div class="about-text">
-                <p>I am a passionate and driven data science enthusiast with a keen interest in uncovering insights and driving decisions informed through data. With a solid foundation in analytical thinking and problem-solving, I excel at transforming complex datasets into meaningful narratives that inform strategy and innovation.</p>
-                <p>My approach blends technical expertise with a curious mindset, allowing me to tackle challenges with creativity and precision. Whether it's designing predictive models, visualizing trends, or optimizing processes, I am dedicated to leveraging data to deliver impactful results.</p>
-                <p>I thrive in collaborative environments where I can contribute my skills while continuously learning and growing.</p>
+            <div class="profile-photo-wrap">
+              <img src="./assets/Profile Pic (1).png" alt="Conner Jamison" />
             </div>
-        </div>
-    </section>
+          </div>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/Screenshot 2024-12-29 at 7.59.20 PM.png" alt="MLS Predictions">
-                </div>
-                <div class="project-content">
-                    <h3>MLS Predictions</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions" class="btn btn-secondary" target="_blank">GitHub</a>
-                        <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions/visualizations%2Bresults" class="btn btn-secondary" target="_blank">Visuals</a>
-                    </div>
-                </div>
+          <div class="info-grid">
+            <div class="info-item">
+              <p class="info-label">Education</p>
+              <p class="info-value">B.S. Data Science @ GSU</p>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/Screenshot 2024-11-16 at 2.44.19 PM.png" alt="Sales Data">
-                </div>
-                <div class="project-content">
-                    <h3>Sales Data</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/Connerj1234/Projects/tree/main/Online-Sales-Data" class="btn btn-secondary" target="_blank">GitHub</a>
-                        <a href="https://docs.google.com/presentation/d/1_vrqPVFloPCiD4ODom796znwVO34TL_G7wH8ueZ21N4/edit?usp=sharing" class="btn btn-secondary" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/Screenshot 2024-09-12 at 2.38.13 PM.png" alt="Weather App">
-                </div>
-                <div class="project-content">
-                    <h3>Weather App</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/Connerj1234/Projects/tree/main/Weather-App-main" class="btn btn-secondary" target="_blank">GitHub</a>
-                        <a href="https://youtube.com/shorts/3x3jRL2uEEM?feature=share" class="btn btn-secondary" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
+          <div class="profile-actions">
+            <div class="profile-links">
+              <a href="https://github.com/Connerj1234" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/conner-jamison-16a20b208/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1brn4dOxiFocWQ-8D_FwCc40-AuGbvLI8xDP5oTWTNPQ/view?usp=download"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+          </div>
+        </article>
+      </aside>
+
+      <section class="content-column">
+        <article class="panel" id="about">
+          <div class="panel-head">
+            <p class="eyebrow">About</p>
+            <h2>Turning data into decisions and useful products.</h2>
+          </div>
+          <div class="panel-body about-copy">
+            <p>
+              I am a passionate and driven data science enthusiast with a keen
+              interest in uncovering insights and driving decisions informed
+              through data. With a solid foundation in analytical thinking and
+              problem-solving, I excel at transforming complex datasets into
+              meaningful narratives that inform strategy and innovation.
+            </p>
+            <p>
+              My approach blends technical expertise with a curious mindset,
+              allowing me to tackle challenges with creativity and precision.
+              Whether it is designing predictive models, visualizing trends, or
+              optimizing processes, I am dedicated to leveraging data to deliver
+              impactful results.
+            </p>
+            <p>
+              I thrive in collaborative environments where I can contribute my
+              skills while continuously learning and growing.
+            </p>
+          </div>
+        </article>
+
+        <article class="panel" id="projects">
+          <div class="panel-head">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="./assets/Screenshot 2024-12-29 at 7.59.20 PM.png" alt="MLS Predictions" />
+              <div class="project-copy">
+                <h3>MLS Predictions</h3>
+                <p>Predictive analysis and visualization focused on MLS outcomes and trends.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions/visualizations%2Bresults" target="_blank" rel="noopener noreferrer">Visuals</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./assets/Screenshot 2024-11-16 at 2.44.19 PM.png" alt="Sales Data" />
+              <div class="project-copy">
+                <h3>Sales Data</h3>
+                <p>Data storytelling and metric analysis on online sales performance.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Connerj1234/Projects/tree/main/Online-Sales-Data" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://docs.google.com/presentation/d/1_vrqPVFloPCiD4ODom796znwVO34TL_G7wH8ueZ21N4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./assets/Screenshot 2024-09-12 at 2.38.13 PM.png" alt="Weather App" />
+              <div class="project-copy">
+                <h3>Weather App</h3>
+                <p>Weather dashboard project with clean data display and simple UX.</p>
+                <div class="project-links">
+                  <a href="https://github.com/Connerj1234/Projects/tree/main/Weather-App-main" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://youtube.com/shorts/3x3jRL2uEEM?feature=share" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="panel" id="contact">
+          <div class="panel-head">
+            <p class="eyebrow">Contact</p>
+            <h2>Let us build something useful.</h2>
+          </div>
+
+          <div class="contact-layout">
             <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="user_name" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="user_email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="user_message" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                <p class="contact-message" id="contact-message"></p>
+              <label>
+                <span>Name</span>
+                <input type="text" name="user_name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="user_email" required />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea name="user_message" rows="5" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="contact-message" id="contact-message" aria-live="polite"></p>
             </form>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/conner-jamison-16a20b208/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/Connerj1234" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.instagram.com/connerjamison1/" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </div>
-        </div>
-    </section>
+          </div>
+        </article>
+      </section>
+    </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">Conner Jamison</div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&#169; 2025 Conner Jamison. All Rights Reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <p id="copyright"></p>
     </footer>
-
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
