@@ -34,6 +34,31 @@ document.addEventListener("DOMContentLoaded", () => {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  const projectSwitchButtons = document.querySelectorAll(".project-switch-btn");
+  const projectViews = document.querySelectorAll(".project-view");
+
+  if (projectSwitchButtons.length && projectViews.length) {
+    const setProjectView = (viewKey) => {
+      projectSwitchButtons.forEach((button) => {
+        const isActive = button.dataset.projectView === viewKey;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-selected", String(isActive));
+      });
+
+      projectViews.forEach((view) => {
+        const isActive = view.dataset.projectViewContent === viewKey;
+        view.classList.toggle("active", isActive);
+        view.setAttribute("aria-hidden", String(!isActive));
+      });
+    };
+
+    projectSwitchButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setProjectView(button.dataset.projectView);
+      });
+    });
+  }
 });
 
 const contactForm = document.getElementById("contact-form");

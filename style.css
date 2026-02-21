@@ -246,6 +246,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.panel-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -267,6 +274,47 @@ body {
 
 .about-copy p + p {
   margin-top: 0.8rem;
+}
+
+.project-switch {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #0f1728;
+  margin-left: auto;
+}
+
+.project-switch-btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.4rem 0.85rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.project-switch-btn:hover {
+  color: var(--text);
+}
+
+.project-switch-btn.active {
+  color: #03221f;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-view {
+  display: none;
+}
+
+.project-view.active {
+  display: block;
 }
 
 .project-grid {
@@ -416,6 +464,15 @@ body {
 }
 
 @media (max-width: 760px) {
+  .panel-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-switch {
+    margin-left: 0;
+  }
+
   .top-nav {
     flex-direction: column;
     align-items: stretch;

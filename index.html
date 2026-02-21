@@ -98,57 +98,99 @@
         <article class="panel" id="projects">
           <div class="panel-head">
             <p class="eyebrow">Projects</p>
-            <h2>Selected work</h2>
+            <div class="panel-head-row">
+              <h2>Selected work</h2>
+              <div class="project-switch" role="tablist" aria-label="Project category">
+                <button
+                  type="button"
+                  class="project-switch-btn active"
+                  data-project-view="professional"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="projects-professional"
+                >
+                  Professional
+                </button>
+                <button
+                  type="button"
+                  class="project-switch-btn"
+                  data-project-view="personal"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="projects-personal"
+                >
+                  Personal
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="project-grid">
-            <article class="project-card">
-              <img src="./assets/Screenshot 2026-02-18 at 5.40.38 PM.png" alt="Earnings Intel Dashboard" />
-              <div class="project-copy">
-                <h3>Earnings Intel</h3>
-                <p>Earnings-focused analytics dashboard for exploring company performance and trends.</p>
-                <div class="project-links">
-                  <a href="https://github.com/Connerj1234/Projects/tree/main/Earnings-Intel" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="https://connerearnings.netlify.app/" target="_blank" rel="noopener noreferrer">Dashboard</a>
-                </div>
-              </div>
-            </article>
 
-            <article class="project-card">
-              <img src="./assets/Screenshot 2026-02-17 at 5.09.55 PM.png" alt="MLS Predictions" />
-              <div class="project-copy">
-                <h3>MLS Predictions</h3>
-                <p>Predictive analysis and visualization focused on MLS outcomes and trends.</p>
-                <div class="project-links">
-                  <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="https://connermls.netlify.app/" target="_blank" rel="noopener noreferrer">Dashboard</a>
+          <div class="project-view active" id="projects-professional" data-project-view-content="professional" role="tabpanel">
+            <div class="project-grid">
+              <article class="project-card">
+                <img src="./assets/Screenshot 2026-02-18 at 5.40.38 PM.png" alt="Earnings Intel Dashboard" />
+                <div class="project-copy">
+                  <h3>Earnings Intel</h3>
+                  <p>Earnings-focused analytics dashboard for exploring company performance and trends.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/Connerj1234/Projects/tree/main/Earnings-Intel" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://connerearnings.netlify.app/" target="_blank" rel="noopener noreferrer">Dashboard</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-card">
-              <img src="./assets/Screenshot 2026-02-17 at 8.01.19 PM.png" alt="Productivity Dashboard" />
-              <div class="project-copy">
-                <h3>Productivity</h3>
-                <p>Interactive dashboard for tracking productivity patterns and daily performance insights.</p>
-                <div class="project-links">
-                  <a href="https://github.com/Connerj1234/Projects/tree/main/assignment-dashboard-v2" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="https://connerproductivity.netlify.app/main/dashboard" target="_blank" rel="noopener noreferrer">Dashboard</a>
+              <article class="project-card">
+                <img src="./assets/Screenshot 2026-02-17 at 5.09.55 PM.png" alt="MLS Predictions" />
+                <div class="project-copy">
+                  <h3>MLS Predictions</h3>
+                  <p>Predictive analysis and visualization focused on MLS outcomes and trends.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/Connerj1234/Projects/tree/main/MLS-Predictions" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://connermls.netlify.app/" target="_blank" rel="noopener noreferrer">Dashboard</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-card">
-              <img src="./assets/Screenshot 2024-11-16 at 2.44.19 PM.png" alt="Sales Data" />
-              <div class="project-copy">
-                <h3>Sales Data</h3>
-                <p>Data storytelling and metric analysis on online sales performance.</p>
-                <div class="project-links">
-                  <a href="https://github.com/Connerj1234/Projects/tree/main/Online-Sales-Data" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="https://docs.google.com/presentation/d/1_vrqPVFloPCiD4ODom796znwVO34TL_G7wH8ueZ21N4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <article class="project-card">
+                <img src="./assets/Screenshot 2026-02-17 at 8.01.19 PM.png" alt="Productivity Dashboard" />
+                <div class="project-copy">
+                  <h3>Productivity</h3>
+                  <p>Interactive dashboard for tracking productivity patterns and daily performance insights.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/Connerj1234/Projects/tree/main/assignment-dashboard-v2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://connerproductivity.netlify.app/main/dashboard" target="_blank" rel="noopener noreferrer">Dashboard</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
+              <article class="project-card">
+                <img src="./assets/Screenshot 2024-11-16 at 2.44.19 PM.png" alt="Sales Data" />
+                <div class="project-copy">
+                  <h3>Sales Data</h3>
+                  <p>Data storytelling and metric analysis on online sales performance.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/Connerj1234/Projects/tree/main/Online-Sales-Data" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://docs.google.com/presentation/d/1_vrqPVFloPCiD4ODom796znwVO34TL_G7wH8ueZ21N4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-view" id="projects-personal" data-project-view-content="personal" role="tabpanel" aria-hidden="true">
+            <div class="project-grid">
+              <article class="project-card">
+                <img src="./assets/Screenshot 2026-02-20 at 10.01.24 PM.png" alt="Atlanta United project preview" />
+                <div class="project-copy">
+                  <h3>Atlanta United Hub</h3>
+                  <p>Personal fan project for exploring Atlanta United data, updates, and content in one place.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/Connerj1234/Projects/tree/main/atlanta-united" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://conneratl.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </article>
 
