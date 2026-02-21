@@ -87,15 +87,60 @@ function initializeCustomGitHubWidget(root, username) {
   });
 }
 
+async function fetchFourMonthContributionTotal(username, startDate, endDate) {
+  try {
+    const endpoint = `https://github-contributions-api.jogruber.de/v4/${encodeURIComponent(username)}`;
+    const response = await fetch(endpoint, { cache: "no-store" });
+    if (!response.ok) return null;
+
+    const payload = await response.json();
+    const items = Array.isArray(payload?.contributions) ? payload.contributions : [];
+
+    let total = 0;
+    items.forEach((item) => {
+      if (!item || typeof item.date !== "string") return;
+      if (item.date >= startDate && item.date <= endDate) {
+        total += Number(item.count) || 0;
+      }
+    });
+
+    return total;
+  } catch (error) {
+    return null;
+  }
+}
+
 function renderCustomGitHubGrid(root, username, dayNodes) {
+  const extractContributionCount = (day) => {
+    const attrCandidates = [
+      day.getAttribute("data-count"),
+      day.getAttribute("data-value"),
+      day.getAttribute("aria-label"),
+      day.getAttribute("title"),
+      day.parentElement ? day.parentElement.getAttribute("data-original-title") : "",
+      day.closest("[data-original-title]") ? day.closest("[data-original-title]").getAttribute("data-original-title") : "",
+      day.dataset ? day.dataset.count : "",
+      day.dataset ? day.dataset.value : "",
+      day.querySelector("title") ? day.querySelector("title").textContent : "",
+    ];
+
+    for (const candidate of attrCandidates) {
+      if (!candidate) continue;
+      const numeric = Number(candidate);
+      if (Number.isFinite(numeric)) return numeric;
+      const match = String(candidate).match(/(\d+)\s+contributions?/i);
+      if (match) return Number(match[1]);
+      if (/no contributions?/i.test(String(candidate))) return 0;
+    }
+
+    return 0;
+  };
+
   const contributions = dayNodes
     .map((day) => {
       const date = day.getAttribute("data-date");
       const level = Number(day.getAttribute("data-level")) || 0;
-      const dataCount = Number(day.getAttribute("data-count"));
-      const label = day.getAttribute("title") || "";
-      const countMatch = label.match(/(\d+)\s+contributions?/i);
-      const count = Number.isFinite(dataCount) ? dataCount : countMatch ? Number(countMatch[1]) : 0;
+      const count = extractContributionCount(day);
       return { date, level, count };
     })
     .filter((entry) => entry.date)
@@ -199,6 +244,14 @@ function renderCustomGitHubGrid(root, username, dayNodes) {
   summary.className = "gh-summary";
   summary.textContent = `${total} contributions in the last 4 months`;
   root.appendChild(summary);
+
+  const startKey = rangeStart.toISOString().slice(0, 10);
+  const endKey = lastDate.toISOString().slice(0, 10);
+  fetchFourMonthContributionTotal(username, startKey, endKey).then((apiTotal) => {
+    if (typeof apiTotal === "number") {
+      summary.textContent = `${apiTotal} contributions in the last 4 months`;
+    }
+  });
 }
 
 const contactForm = document.getElementById("contact-form");
