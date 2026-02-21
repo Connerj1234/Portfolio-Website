@@ -109,6 +109,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .profile-top {
@@ -182,6 +183,109 @@ body {
   display: grid;
   gap: 0.55rem;
   margin-top: auto;
+  min-width: 0;
+}
+
+.github-widget {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 0.7rem 0.7rem;
+  background: #0f1728;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.github-widget .calendar {
+  width: 100%;
+  min-width: 0;
+}
+
+.calendar-source {
+  display: none !important;
+}
+
+.gh-activity-link {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.gh-grid-shell {
+  position: relative;
+  padding-top: 20px;
+}
+
+.gh-months {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.gh-month-label {
+  position: absolute;
+  top: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--muted);
+  transform: translateX(-6%);
+  white-space: nowrap;
+}
+
+.gh-weeks {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+}
+
+.gh-week {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.gh-day {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  background: #223047;
+}
+
+.gh-day.level-0 {
+  background: #223047;
+}
+
+.gh-day.level-1 {
+  background: #2f5d86;
+}
+
+.gh-day.level-2 {
+  background: #3c79aa;
+}
+
+.gh-day.level-3 {
+  background: #3ea3da;
+}
+
+.gh-day.level-4 {
+  background: #37d2c3;
+}
+
+.gh-summary {
+  margin-top: 0.5rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--muted);
 }
 
 .profile-links {
@@ -504,6 +608,10 @@ body {
 
   .profile-links {
     grid-template-columns: 1fr;
+  }
+
+  .github-widget {
+    overflow: hidden;
   }
 
   .panel {
