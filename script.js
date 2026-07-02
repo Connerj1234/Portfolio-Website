@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
 
   const setActiveLink = () => {
-    let current = "about";
+    let current = sections[0] ? sections[0].id : "projects";
     sections.forEach((section) => {
       const sectionTop = section.offsetTop - 180;
       if (window.scrollY >= sectionTop) {

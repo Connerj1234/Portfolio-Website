@@ -63,6 +63,20 @@ body {
   letter-spacing: -0.02em;
 }
 
+.brand-signature {
+  display: inline-flex;
+  align-items: center;
+  width: 146px;
+  height: 38px;
+}
+
+.brand-signature img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .nav-links {
   display: flex;
   gap: 0.4rem;
@@ -119,6 +133,12 @@ body {
   gap: 1rem;
 }
 
+.profile-identity {
+  display: flex;
+  align-items: center;
+  min-height: 84px;
+}
+
 .profile-photo-wrap {
   border-radius: 14px;
   overflow: hidden;
@@ -131,17 +151,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.role-tag {
-  display: inline-block;
-  font-size: 0.76rem;
-  font-weight: 700;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 999px;
-  padding: 0.32rem 0.72rem;
-  margin-bottom: 0.65rem;
 }
 
 .profile-card h1 {
@@ -181,7 +190,7 @@ body {
 
 .profile-actions {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.75rem;
   margin-top: auto;
   min-width: 0;
 }
@@ -291,8 +300,8 @@ body {
 .profile-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.55rem;
-  margin-top: 1rem;
+  gap: 0.75rem;
+  margin-top: 0;
 }
 
 .profile-links a {
@@ -370,14 +379,6 @@ body {
   letter-spacing: -0.02em;
   font-size: 1.6rem;
   line-height: 1.25;
-}
-
-.about-copy {
-  color: #c8d0e1;
-}
-
-.about-copy p + p {
-  margin-top: 0.8rem;
 }
 
 .project-switch {
@@ -530,9 +531,14 @@ body {
 }
 
 .contact-message {
+  display: none;
   min-height: 1.1rem;
   font-size: 0.85rem;
   margin-top: 0.7rem;
+}
+
+.contact-message:not(:empty) {
+  display: block;
 }
 
 .site-footer {
@@ -580,6 +586,10 @@ body {
   .top-nav {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .brand-signature {
+    align-self: center;
   }
 
   .nav-links {
